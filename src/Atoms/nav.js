@@ -1,12 +1,12 @@
 function Nav() {
     return (
-        <ul>
-            <li><a>Home</a></li>
-            <li><a>About</a></li>
-            <li><a>Menu</a></li>
-            <li><a>Reservations</a></li>
-            <li><a>Order online</a></li>
-            <li><a>Login</a></li>
+        <ul className="list-group list-group-horizontal justify-content-end" >
+            <li className="list-group-item border-0"><a>Home</a></li>
+            <li className="list-group-item border-0"><a>About</a></li>
+            <li className="list-group-item border-0"><a>Menu</a></li>
+            <li className="list-group-item border-0"><a>Reservations</a></li>
+            <li className="list-group-item border-0"><a>Order online</a></li>
+            <li className="list-group-item border-0"><a>Login</a></li>
         </ul>
     )
 }
