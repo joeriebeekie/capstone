@@ -1,14 +1,17 @@
 import Header from "./Molecules/header"
-import Home from "./Pages/home"
 import Footer from "./Molecules/footer"
+import { Outlet } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 
 function App() {
+
   return (
     <>
       <Header />
-      <Home />
+        <main>
+          <Outlet />
+        </main>
       <Footer />
     </>
   );

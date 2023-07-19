@@ -6,7 +6,7 @@ function Header() {
         <header className="container">
             <div className="row align-items-center justify-content-between">
                 <div className="col flex-shrink-1 flex-grow-0">
-                    <img className="py-2" src={logo} />
+                    <img width="200" className="py-3" src={logo} />
                 </div>
                 <div className="col">
                     <Nav />
