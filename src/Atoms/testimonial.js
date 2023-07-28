@@ -6,10 +6,10 @@ function Testimonial(props) {
                 <img src={props.image} className="img-fluid rounded p-3" alt={props.alt} />
                 </div>
                 <div className="col-md-8">
-                <div className="card-body">
-                    <h5 className="card-title">{props.name}</h5>
-                    <p className="card-text">{props.desc}</p>
-                </div>
+                    <div className="card-body">
+                        <h5 className="card-title">{props.name}</h5>
+                        <p className="card-text">{props.desc}</p>
+                    </div>
                 </div>
             </div>
         </div>

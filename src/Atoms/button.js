@@ -1,6 +1,6 @@
 function Button(props) {
     return (
-        <button type="button" class="round border-0">{props.children}</button>
+        <button type="button" className="round border-0 button">{props.children}</button>
     )
 }
 

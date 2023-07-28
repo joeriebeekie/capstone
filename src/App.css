@@ -9,6 +9,18 @@
   --gradient: linear-gradient(149deg, #3B514A 0%, #586863 100%);
 }
 
+input.field,
+textarea.field, select.field {
+  width: 400px;
+	padding: 7px 10px;
+	border: none;
+	border-radius: 0;
+	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
 .backcolor {
   background: var(--gradient);
 }
@@ -63,8 +75,8 @@ p {
   font-weight: 400;
 }
 
-p.highlight {
-  font-weight: 500;
+.highlight {
+  font-weight: 500!important;
 }
 
 a {
@@ -76,7 +88,7 @@ a {
   border-radius: 16px;
 }
 
-button, button:active[type="button"] {
+.button, .button:active[type="button"] {
   padding: 8px 16px;
   font-weight: 500;
   opacity: 1;
@@ -85,7 +97,7 @@ button, button:active[type="button"] {
   transition: opacity 200ms;
 }
 
-button:hover {
+.button:hover {
   opacity: 0.8;
   color: var(--dark);
   background-color: var(--secondary);
@@ -111,4 +123,80 @@ header img {
 
 .headerImg {
   margin-bottom: -5rem;
+}
+
+/* Forms */
+
+.statusCircle {
+  width: 25px;
+  height: 25px;
+  border: var(--primary) 1px solid;
+}
+
+.statusCircle[data-status="active"] {
+  background-color: var(--primary);
+}
+
+.statusLine {
+  width: 46px;
+  border-bottom: #0000002d 2px solid;
+}
+
+.stepSlide[data-step="inactive"] {
+  display: none;
+}
+
+input.field, textarea.field {
+  background-color: rgba(217, 217, 217, 0.35);
+}
+
+.plus, .min {
+  height: 25px;
+  width: 25px;
+  font-size: 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  background-color: var(--secondary);
+  cursor: pointer;
+}
+
+.dinerAmount {
+  width: 200px;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.plus.disable, .min.disable {
+  pointer-events: none;
+  background-color: rgba(217, 217, 217, 0.35);
+}
+
+.selectWrap {
+  display: inline-block;
+  position: relative;
+  background-color: rgba(217, 217, 217, 0.35);
+  width: 400px;
+}
+
+select.field {
+  cursor: pointer;
+  background: 0;
+}
+
+.selectWrap:after {
+  pointer-events: none;
+  content: "";
+  border-bottom: 1px solid;
+  border-right: 1px solid;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  right: 15px;
+  transform: rotate(45deg);
+  top: 12px;
 }
